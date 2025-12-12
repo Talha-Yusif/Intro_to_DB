@@ -20,7 +20,7 @@ try:
     print(" Database 'alx_book_store' created successfully!")
     cursor.close()
    
-except Error as e :
+except mysql.connector.Error as e :
     print(e)
 finally:
     if connection.is_connected():
